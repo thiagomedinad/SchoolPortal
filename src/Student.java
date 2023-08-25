@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Student {
 
-    private String firstName;
-    private String lastName;
+    final private String firstName;
+    final private String lastName;
     final private String registrationCode;
     private Class classes;
     final private String entryDate;
