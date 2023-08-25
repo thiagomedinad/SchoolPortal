@@ -4,10 +4,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Student {
+public class Student extends Person{
 
-    final private String firstName;
-    final private String lastName;
     final private String registrationCode;
     private Course courses;
     final private String entryDate;
@@ -20,13 +18,13 @@ public class Student {
     public Student() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Insert the student's first name: ");
-        this.firstName = sc.nextLine();
+        setFirstName(sc.nextLine());
 
         System.out.print("Insert the student's last name: ");
-        this.lastName = sc.nextLine();
+        setLastName(sc.nextLine());
 
         this.tuition = 120000;
-        this.isPaid = True;
+        this.isPaid = true;
         this.totalHours = 3600;
         this.remainingHours = totalHours;
         this.entryDate = generateEntryDate();
@@ -95,7 +93,7 @@ public class Student {
         return totalHours;
     }
 
-    public Boolean getIsPaid() {
-
-    }
+//    public Boolean getIsPaid() {
+//
+//    }
 }

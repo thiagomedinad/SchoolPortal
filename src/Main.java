@@ -3,6 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         Student s1 = new Student();
+        Student s2 = new Student();
         Course c1 = new Course(100);
         s1.setRemainingHours(c1.getCourseWorkload());
 
@@ -11,5 +12,7 @@ public class Main {
         System.out.println(s1.getTotalHours());
         System.out.println(s1.getEntryDate());
         System.out.println(s1.getRemainingHours());
+        System.out.println(s1.getFirstName());
+        System.out.println(s2.getFirstName());
     }
 }
