@@ -3,10 +3,13 @@
 public class Main {
     public static void main(String[] args) {
         Student s1 = new Student();
+        Course c1 = new Course(100);
+        s1.setRemainingHours(c1.getCourseWorkload());
 
         System.out.println(s1.getTuition());
         System.out.println(s1.getRegistrationCode());
         System.out.println(s1.getTotalHours());
         System.out.println(s1.getEntryDate());
+        System.out.println(s1.getRemainingHours());
     }
 }

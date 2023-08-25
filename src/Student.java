@@ -15,6 +15,7 @@ public class Student {
     private int remainingHours;
     final private int tuition;
     static private int id = 1000;
+    private Boolean isPaid;
 
     public Student() {
         Scanner sc = new Scanner(System.in);
@@ -25,6 +26,7 @@ public class Student {
         this.lastName = sc.nextLine();
 
         this.tuition = 120000;
+        this.isPaid = True;
         this.totalHours = 3600;
         this.remainingHours = totalHours;
         this.entryDate = generateEntryDate();
@@ -61,6 +63,10 @@ public class Student {
         this.courses = courses;
     }
 
+    public void checkPayment() {
+
+    }
+
     public void setRemainingHours(int classWorkload) {
         this.remainingHours -= classWorkload;
     }
@@ -87,5 +93,9 @@ public class Student {
 
     public int getTotalHours() {
         return totalHours;
+    }
+
+    public Boolean getIsPaid() {
+
     }
 }
