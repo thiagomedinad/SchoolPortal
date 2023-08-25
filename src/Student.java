@@ -9,7 +9,7 @@ public class Student {
     final private String firstName;
     final private String lastName;
     final private String registrationCode;
-    private Class classes;
+    private Course courses;
     final private String entryDate;
     final private int totalHours;
     private int remainingHours;
@@ -26,6 +26,7 @@ public class Student {
 
         this.tuition = 120000;
         this.totalHours = 3600;
+        this.remainingHours = totalHours;
         this.entryDate = generateEntryDate();
         this.registrationCode = generateRegistrationCode();
     }
@@ -56,16 +57,16 @@ public class Student {
         return yearInString + "." + period;
     }
 
-    public void setClasses(Class classes) {
-        this.classes = classes;
+    public void setCourses(Course courses) {
+        this.courses = courses;
     }
 
-    public void setRemainingHours(int remainingHours) {
-        this.remainingHours = remainingHours;
+    public void setRemainingHours(int classWorkload) {
+        this.remainingHours = this.remainingHours - classWorkload;
     }
 
-    public Class getClasses() {
-        return classes;
+    public Course getCourses() {
+        return courses;
     }
 
     public String getEntryDate() {
