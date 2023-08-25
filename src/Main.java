@@ -5,6 +5,7 @@ public class Main {
         Student s1 = new Student();
         Student s2 = new Student();
         Course c1 = new Course(100);
+        Professor p1 = new Professor();
         s1.setRemainingHours(c1.getCourseWorkload());
 
         System.out.println(s1.getTuition());

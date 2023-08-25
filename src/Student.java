@@ -16,13 +16,7 @@ public class Student extends Person{
     private Boolean isPaid;
 
     public Student() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Insert the student's first name: ");
-        setFirstName(sc.nextLine());
-
-        System.out.print("Insert the student's last name: ");
-        setLastName(sc.nextLine());
-
+        super();
         this.tuition = 120000;
         this.isPaid = true;
         this.totalHours = 3600;
