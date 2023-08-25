@@ -62,7 +62,7 @@ public class Student {
     }
 
     public void setRemainingHours(int classWorkload) {
-        this.remainingHours = this.remainingHours - classWorkload;
+        this.remainingHours -= classWorkload;
     }
 
     public Course getCourses() {
